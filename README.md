@@ -22,7 +22,7 @@ Go to the project directory
   cd css-flip-card
 ```
 
-Open `index.html` in your browser.
+Open `src/index.html` in your browser.
 
 
 ## Contributing
