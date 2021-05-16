@@ -10,12 +10,10 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="demo.css" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
-<body x-data="{ flipped: false }">
+<body>
 <div>
-    <div class="flip-card" :class="{ 'flip-card--flipped': flipped }">
+    <div id="flip-card" class="flip-card">
         <div class="flip-card__content">
             <div class="flip-card__front">
                 <!-- Start: Custom Content (Front) -->
@@ -30,10 +28,15 @@
         </div>
     </div>
     <div class="text-center mt-8">
-        <button @click="flipped=!flipped" type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button id="button" type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Flip card
         </button>
     </div>
 </div>
+<script>
+    document.getElementById('button').addEventListener('click', () => {
+        document.getElementById('flip-card').classList.toggle('flip-card--flipped');
+    });
+</script>
 </body>
 </html>
