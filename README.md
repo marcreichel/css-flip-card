@@ -28,3 +28,9 @@ Open `index.html` in your browser.
 ## Contributing
 
 Contributions are always welcome!
+
+
+## Appendix
+
+- Heart icon from https://heroicons.com/ by [Steve Schoger](https://twitter.com/steveschoger)
+- Pattern from https://www.heropatterns.com/ by [Steve Schoger](https://twitter.com/steveschoger)
