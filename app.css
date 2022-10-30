@@ -32,13 +32,17 @@ html, body {
     backface-visibility: hidden;
 }
 
+.flip-card__front {
+    transform: translateZ(1px);
+}
+
 .flip-card__back {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(-1px);
 }
 
 .flip-card:hover > .flip-card__content,
